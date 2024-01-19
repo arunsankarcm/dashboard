@@ -12,7 +12,7 @@ const DataVisualization = ({ chartType }) => {
     const [selectedRegion, setSelectedRegion] = useState('All');
 
     useEffect(() => {
-        axios.get('https://dashboard-backend-4pv3.onrender.com/data')
+        axios.get('https://backend-v8ln.onrender.com/data')
             .then(response => {
                 setData(response.data);
             })
