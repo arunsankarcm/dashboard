@@ -32,7 +32,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'views')));
 app.use(cors({
-  origin: 'http://localhost:3000' // Allow only the React app to access
+  origin: 'https://snazzy-gaufre-2a5853.netlify.app/' // Allow only the React app to access
 }));
 
 app.use('/', indexRouter);
